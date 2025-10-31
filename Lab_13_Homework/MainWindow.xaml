@@ -1,0 +1,31 @@
+﻿<Window x:Class="Lab_13_Homework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="300" Width="450"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Grid Background="#FF211F1F">
+        <StackPanel VerticalAlignment="Center" Margin="40">
+            <TextBlock Text="Цитатник Стетхема" 
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,10" Foreground="White"/>
+            <Border BorderBrush="#FF211F1F" BorderThickness="1" Background="#FF211F1F" Height="80">
+                <TextBlock x:Name="TextBlock" 
+                           Text="Нажми кнопку, чтобы получить дозу брутальности" 
+                           FontSize="14" 
+                           TextWrapping="Wrap" 
+                           Margin="10" 
+                           TextAlignment="Center"
+                           VerticalAlignment="Center" Foreground="#FFBFBFBF"/>
+            </Border>
+            <Button x:Name="buttonNew" 
+                    Content="Новая цитата" 
+                    HorizontalAlignment="Center" 
+                    Padding="40,10"
+                    Background="#FFD2D2D2" Click="buttonNew_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
